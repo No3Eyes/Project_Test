@@ -15,11 +15,21 @@ $pcolor3: #FF6C3E
 $pcolor4: #C73F13
 $pcolor5: #631800
 
+:root
+    --bs-primary: $tcolor3
+    --bs-secondary: #f65005
+    --bs-success: #198754
+    --bs-info: #0dcaf0
+    --bs-warning: #ffc107
+    --bs-danger: #dc3545
+    --bs-light: #f7f8fc
+    --bs-dark: $tcolor5
+
 .text-primary
     color: $tcolor2 !important
 
 .text-secondary
-    color: $tcolor3 !important
+    color: $pcolor3 !important
     font-family: monospace
     // font-size: 3rem
     // text-shadow: #633700 1px 1px
@@ -60,8 +70,8 @@ $pcolor5: #631800
         border-color: $tcolor3
 
     .btn-outline-primary
-        color: $tcolor3
-        border-color: $tcolor3
+        color: $tcolor3 !important
+        border-color: $tcolor4 !important
 
 .btn-outline-primary:hover
     color: $tcolor5
@@ -82,3 +92,10 @@ $pcolor5: #631800
 .btn-outline-primary:disabled, .btn-outline-primary.disabled
     color: $tcolor3
     background-color: transparent
+
+.momo-off-shelve
+    border: none
+    // font-weight: 700
+    &:hover
+        transform: scale(1.2)
+        transition-duration: 0.4s

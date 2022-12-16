@@ -1,9 +1,20 @@
+:root {
+  --bs-primary: $tcolor3;
+  --bs-secondary: #f65005;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f7f8fc;
+  --bs-dark: $tcolor5;
+}
+
 .text-primary {
   color: #FFA83E !important;
 }
 
 .text-secondary {
-  color: #F38B0B !important;
+  color: #FF6C3E !important;
   font-family: monospace;
 }
 
@@ -45,8 +56,8 @@
   border-color: #F38B0B;
 }
 .btn-primary .btn-outline-primary {
-  color: #F38B0B;
-  border-color: #F38B0B;
+  color: #F38B0B !important;
+  border-color: #C77613 !important;
 }
 
 .btn-outline-primary:hover {
@@ -72,4 +83,12 @@
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
   color: #F38B0B;
   background-color: transparent;
+}
+
+.momo-off-shelve {
+  border: none;
+}
+.momo-off-shelve:hover {
+  transform: scale(1.2);
+  transition-duration: 0.4s;
 }/*# sourceMappingURL=momoStyle.css.map */

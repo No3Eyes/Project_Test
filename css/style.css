@@ -2,11 +2,10 @@
 :root {
     /* --primary: #3cb815; */
     /* --primary: #FFA83E */
-    --primary: #C77613
+    --primary: #c77613;
     --secondary: #f65005;
     --light: #f7f8fc;
     --dark: #111111;
-    
 }
 
 .back-to-top {
@@ -191,6 +190,7 @@
     padding-top: 12rem;
     padding-bottom: 6rem;
     background: url(../img/carousel-1.jpg) top right no-repeat;
+    /* background: #eee; */
     background-size: cover;
 }
 
