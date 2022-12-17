@@ -26,35 +26,13 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
-    <link href="scss/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
 
     <!-- 改過的 -->
-    <link href="./scss/momoStyle.css" rel="stylesheet" />
-
-
-    <!-- embeding css -->
-    <!-- <style>
-        .text-primary {
-            color: #C77613 !important;
-
-        }
-
-        .text-secondary {
-            color: #FFA83E !important;
-            text-shadow: #633700 1px 1px;
-        }
-
-        .text-body {
-            color: #C77613 !important;
-        }
-
-        .text-dark {
-            color: #633700
-        }
-    </style> -->
+    <link href="./css/momoStyle.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -109,17 +87,117 @@
                     <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
                         <small class="fa fa-search text-body"></small>
                     </a>
-                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
+                    <!-- 登入鈕 -->
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
                         <small class="fa fa-user text-body"></small>
-                    </a>
-                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
-                        <small class="fa fa-shopping-bag text-body"></small>
                     </a>
                 </div>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
+
+    <!-- 登入_Modal Start -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header  bg-primary">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">登入服務</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="loginmail">
+                                <h5>E-Mail</h5>
+                            </label><br>
+                            <input class="form-control" type="email" name="" id="loginmail"
+                                placeholder="example@mail.com" required>
+                            <div class="invalid-feedback">請輸入E-Mail</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">
+                                <h5>請輸入密碼</h5>
+                            </label><br>
+                            <input class="form-control" type="password" name="" id="password" placeholder="password"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="" id="save">
+                            <label for="save"><small>記住帳號</small></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="mr-auto" data-dismiss="modal" data-bs-toggle="modal"
+                    data-bs-target="#registerModal">還沒有帳號?</a>
+                    <button type="submit" class="btn btn-primary">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登入_Modal End -->
+
+    <!-- 註冊_Modal Start -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header  bg-warning">
+                    <h5 class="modal-title" id="exampleModalLabel">註冊服務</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>使用者規範</h5>
+                            <p class="text-black-50">提前精品對方提示訊息就是創新請點擊，春天似乎也會天天治理就鐵路警方系統，執行英雄大學輔助感到過了有
+                                一些，共享版通信光臨將會從事，眼光走向自動查詢本站主演小姐會員，笑着實際地方落經濟發展所在地不是，他就購物計算而言後面意識討論
+                                感到討論區，總體一。</p>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="registermail">
+                                        <h5>E-Mail</h5>
+                                    </label><br>
+                                    <input class="form-control" type="email" name="" id="registermail"
+                                        placeholder="example@mail.com" required>
+                                    <div class="invalid-feedback">請輸入E-Mail</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="registerpassword">
+                                        <h5>請輸入密碼</h5>
+                                    </label><br>
+                                    <input class="form-control" type="password" name=""
+                                        id="registerpassword" placeholder="password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="conformpassword">
+                                        <h5>確認密碼</h5>
+                                    </label><br>
+                                    <input class="form-control" type="password" name="" id="conformpassword"
+                                        placeholder="password" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="" id="accept">
+                                    <label for="accept"><small>同意條款</small></label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="mr-auto" data-bs-dismiss="modal" data-bs-toggle="modal">切換登入服務</a>
+                    <button type="button" class="btn btn-primary">註冊</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 註冊_Modal End -->
 
     <!-- 首頁版型 Start -->
     <!-- Carousel Start -->
