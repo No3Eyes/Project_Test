@@ -27,28 +27,18 @@
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+<!-- 這個有改過!!! -->
+                <link href="scss/bootstrap.css" rel="stylesheet" />
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet" />
 
-        <!-- embeding css -->
-        <style>
-            .text-primary{
-                color: #C77613  !important;
 
-            }
-            .text-secondary{
-                color: #FFA83E  !important;
-                text-shadow: #633700 1px 1px;
-            }
-            .text-body{
-                color: #C77613  !important;
-            }
-            .text-dark{
-                color:#633700
-            }
-        </style>
+<!-- 這個有改過!!! -->
+        <!-- momoStyle sass -->
+        <link href="./scss/momoStyle.css" rel="stylesheet" />
+
     </head>
 
     <body>
@@ -147,6 +137,7 @@
                             style="max-width: 500px"
                         >
                             <h1 class="display-5 mb-3">甜點品項</h1>
+                            <button class="btn btn-outline-primary"><i class="fas fa-pen text-primary"></i></button>
                             <p>
                                 嘴裡吃點甜讓生活帶些甜
                                 因長期自體免疫狀況及經常在小兒科打滾(?!)，漸漸深知《原食材》對我們的重要性，因此在製作甜點時，不使用防腐劑、香精、膨鬆劑…等化學添加，不僅使用原食材，也堅持好食材，來呈現天然的美味。
@@ -161,12 +152,12 @@
                         <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
                             <li class="nav-item me-2">
                                 <a class="btn btn-outline-primary border-2 active" data-bs-toggle="pill" href="#tab-1"
-                                    >常備品項</a
+                                    >架上商品</a
                                 >
                             </li>
                             <li class="nav-item me-2">
                                 <a class="btn btn-outline-primary border-2" data-bs-toggle="pill" href="#tab-2"
-                                    >泡芙
+                                    >未上架
                                 </a>
                             </li>
                             <li class="nav-item me-0">
@@ -183,12 +174,9 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="product-item">
                                     <div class="position-relative bg-light overflow-hidden">
-                                        <img class="img-fluid w-100" src="./img/CheeseStick.jpg" alt="" />
-                                        <div
-                                            class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
-                                        >
-                                            狗狗可食
-                                        </div>
+                                        <img class="img-fluid w-100" src="./img/CheeseStick.jpg" alt="">
+                                        <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">狗狗可食</div>
+                                        <button class="rounded-pill bg-light text-primary position-absolute end-0 top-0 m-4 py-1 px-3 momo-off-shelve">下架</button>
                                     </div>
                                     <div class="text-center p-4">
                                         <a class="d-block h5 mb-2" href="">cheese餅餅</a>
@@ -197,9 +185,9 @@
                                     </div>
                                     <div class="d-flex border-top">
                                         <small class="w-50 text-center border-end py-2">
-                                            <a class="text-body" href=""
-                                                ><i class="fa fa-eye text-primary me-2"></i>查看商品</a
-                                            >
+                                            <a class="text-body" href="">
+                                                <!-- <i class="fa fa-eye text-primary me-2"></i> -->
+                                                查看商品</a>
                                         </small>
                                         <small class="w-50 text-center py-2">
                                             <a class="text-body" href=""
@@ -395,8 +383,8 @@
                                     </div>
                                     <div class="text-center p-4">
                                         <a class="d-block h5 mb-2" href="">天使之鈴可麗露</a>
-                                        <span class="text-primary me-1">$19.00</span>
-                                        <span class="text-body text-decoration-line-through">$29.00</span>
+                                        <span class="text-primary me-1">$450</span>
+                                        <span class="text-body text-decoration-line-through">$500</span>
                                     </div>
                                     <div class="d-flex border-top">
                                         <small class="w-50 text-center border-end py-2">
@@ -634,7 +622,7 @@
                                     </div>
                                     <div class="text-center p-4">
                                         <a class="d-block h5 mb-2" href="">香草泡芙</a>
-                                        <span class="text-primary me-1">$770</span>
+                                        <span class="text-primary me-1">$70</span>
                                         <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
                                     </div>
                                     <div class="d-flex border-top">
@@ -926,7 +914,7 @@
                                         <div
                                             class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
                                         >
-                                            New
+                                            Summer
                                         </div>
                                     </div>
                                     <div class="text-center p-4">
@@ -955,7 +943,7 @@
                                         <div
                                             class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
                                         >
-                                            New
+                                            中秋限定
                                         </div>
                                     </div>
                                     <div class="text-center p-4">
@@ -977,7 +965,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-md-6">
+                            <!-- <div class="col-xl-3 col-lg-4 col-md-6">
                                 <div class="product-item">
                                     <div class="position-relative bg-light overflow-hidden">
                                         <img class="img-fluid w-100" src="img/product-7.jpg" alt="" />
@@ -1034,7 +1022,7 @@
                                         </small>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-12 text-center">
                                 <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
                             </div>
