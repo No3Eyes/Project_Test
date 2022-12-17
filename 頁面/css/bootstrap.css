@@ -237,13 +237,14 @@ sup {
     top: -0.5em;
 }
 
+/* 連結顏色 */
 a {
-    color: #3cb815;
+    /* color: #3cb815;  */
     text-decoration: none;
 }
 
 a:hover {
-    color: #309311;
+    /* color: #309311; */
 }
 
 a:not([href]):not([class]),
@@ -3908,14 +3909,15 @@ fieldset:disabled .btn {
     background-color: transparent;
 }
 
+/* 按鈕連結 */
 .btn-link {
     font-weight: 400;
-    color: #3cb815;
+    /* color: #3cb815; */
     text-decoration: none;
 }
 
 .btn-link:hover {
-    color: #309311;
+    /* color: #309311; */
 }
 
 .btn-link:disabled,
@@ -4498,9 +4500,10 @@ fieldset:disabled .btn {
     }
 }
 
+/* navbar連結 */
 .nav-link:hover,
 .nav-link:focus {
-    color: #309311;
+    /* color: #309311; */
 }
 
 .nav-link.disabled {
@@ -5325,14 +5328,14 @@ fieldset:disabled .btn {
 
 .page-link:hover {
     z-index: 2;
-    color: #309311;
+    /* color: #309311; */
     background-color: #e9ecef;
     border-color: #dee2e6;
 }
 
 .page-link:focus {
     z-index: 3;
-    color: #309311;
+    /* color: #309311; */
     background-color: #e9ecef;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(60, 184, 21, 0.25);
