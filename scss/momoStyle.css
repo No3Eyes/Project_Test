@@ -32,18 +32,18 @@
   border-color: #F38B0B;
 }
 .btn-primary:hover {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #C79713;
 }
 .btn-check:focus + .btn-primary, .btn-primary .btn-primary:focus {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #C79713;
   box-shadow: 0 0 0 0.25rem #C77613;
 }
 .btn-check:checked + .btn-primary, .btn-primary .btn-check:active + .btn-primary, .btn-primary .btn-primary:active, .btn-primary .btn-primary.active, .btn-primary .show > .btn-primary.dropdown-toggle {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #C79713;
 }
@@ -51,7 +51,7 @@
   box-shadow: 0 0 0 0.25rem #C77613;
 }
 .btn-primary:disabled, .btn-primary .btn-primary.disabled {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #F38B0B;
 }
@@ -61,7 +61,7 @@
 }
 
 .btn-outline-primary:hover {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #F38B0B;
 }
@@ -71,7 +71,7 @@
 }
 
 .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #F38B0B;
 }
@@ -91,4 +91,11 @@
 .momo-off-shelve:hover {
   transform: scale(1.2);
   transition-duration: 0.4s;
+}
+
+.form-control:focus {
+  color: #1e1100;
+  border-color: rgba(243, 139, 11, 0.5);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(199, 118, 19, 0.3);
 }/*# sourceMappingURL=momoStyle.css.map */
