@@ -99,4 +99,9 @@
 
 .momo-product-amount:focus {
   outline-color: #FFA83E;
+}
+
+.momo-btn-edit:hover {
+  background-color: #FFBDA8;
+  color: #631800;
 }/*# sourceMappingURL=momoStyle.css.map */
