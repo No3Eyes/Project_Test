@@ -1,5 +1,5 @@
 :root {
-  --bs-primary: $tcolor3;
+  --bs-primary: $tcolor2;
   --bs-secondary: #f65005;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -37,13 +37,13 @@
   border-color: #C79713;
 }
 .btn-check:focus + .btn-primary, .btn-primary .btn-primary:focus {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #C79713;
   box-shadow: 0 0 0 0.25rem #C77613;
 }
 .btn-check:checked + .btn-primary, .btn-primary .btn-check:active + .btn-primary, .btn-primary .btn-primary:active, .btn-primary .btn-primary.active, .btn-primary .show > .btn-primary.dropdown-toggle {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #C79713;
 }
@@ -51,7 +51,7 @@
   box-shadow: 0 0 0 0.25rem #C77613;
 }
 .btn-primary:disabled, .btn-primary .btn-primary.disabled {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #F38B0B;
 }
@@ -61,7 +61,7 @@
 }
 
 .btn-outline-primary:hover {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #F38B0B;
 }
@@ -71,7 +71,7 @@
 }
 
 .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
-  color: #1E1100;
+  color: #633700;
   background-color: #F38B0B;
   border-color: #F38B0B;
 }
@@ -91,4 +91,12 @@
 .momo-off-shelve:hover {
   transform: scale(1.2);
   transition-duration: 0.4s;
+}
+
+.border-primary {
+  border-color: #FFA83E !important;
+}
+
+.momo-product-amount:focus {
+  outline-color: #FFA83E;
 }/*# sourceMappingURL=momoStyle.css.map */
