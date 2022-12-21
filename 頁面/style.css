@@ -33,7 +33,7 @@ body {
 }
 
 .yaer-change {
-    width: 200px;
+    width: 300px;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -58,6 +58,27 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 2px;
-    font-size: 25px;
+    font-size: 15px;
     color: rgb(255, 255, 255);
+}
+
+.calendar-days div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+    border-radius: 50%;
+}
+
+.calendar-days div:hover span {
+    transition: 0.5s ease-in-out;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(225, 234, 0);
 }
