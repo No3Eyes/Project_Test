@@ -6119,6 +6119,7 @@ fieldset:disabled .btn {
     width: auto;
     margin: 0.5rem;
     pointer-events: none;
+
 }
 
 .modal.fade .modal-dialog {
@@ -6159,6 +6160,7 @@ fieldset:disabled .btn {
     min-height: calc(100% - 1rem);
 }
 
+
 .modal-content {
     position: relative;
     display: flex;
@@ -6168,7 +6170,8 @@ fieldset:disabled .btn {
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 0;
+    border-radius: 12px;
+    /* 增加modal圓角 */
     outline: 0;
 }
 
@@ -6199,6 +6202,7 @@ fieldset:disabled .btn {
     border-bottom: 1px solid #dee2e6;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border-radius: 12px 12px 0 0;
 }
 
 .modal-header .btn-close {
