@@ -16,7 +16,7 @@ $pcolor4: #C73F13
 $pcolor5: #631800
 
 :root
-    --bs-primary: $tcolor3
+    --bs-primary: $tcolor2
     --bs-secondary: #f65005
     --bs-success: #198754
     --bs-info: #0dcaf0
@@ -46,7 +46,7 @@ $pcolor5: #631800
     border-color: $tcolor3
 
     &:hover
-        color: $tcolor5
+        color: $tcolor7
         background-color: $tcolor3
         border-color: $ocolor3
 
@@ -106,3 +106,14 @@ $pcolor5: #631800
     border-color: rgba($tcolor3 ,0.5)
     outline: 0
     box-shadow: 0 0 0 0.25rem rgba($tcolor4 ,0.3)
+.border-primary
+    border-color: $tcolor2 !important
+
+.momo-product-amount
+    &:focus
+        outline-color: $tcolor2
+
+.momo-btn-edit
+    &:hover
+        background-color: $pcolor1
+        color: $pcolor5
