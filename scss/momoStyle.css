@@ -32,7 +32,7 @@
   border-color: #F38B0B;
 }
 .btn-primary:hover {
-  color: #633700;
+  color: #1E1100;
   background-color: #F38B0B;
   border-color: #C79713;
 }
@@ -97,7 +97,9 @@
   color: #1e1100;
   border-color: rgba(243, 139, 11, 0.5);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(199, 118, 19, 0.3);}
+  box-shadow: 0 0 0 0.25rem rgba(199, 118, 19, 0.3);
+}
+
 .border-primary {
   border-color: #FFA83E !important;
 }
@@ -109,4 +111,8 @@
 .momo-btn-edit:hover {
   background-color: #FFBDA8;
   color: #631800;
+}
+
+.momo-logoname {
+  text-shadow: #3F2300 1px 0 3px;
 }/*# sourceMappingURL=momoStyle.css.map */
