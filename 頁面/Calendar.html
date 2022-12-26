@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <script src='index.global.js'></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+         
+          locale:'zh-tw',
+          height: 600,
+          navLinks: true,
+          headerToolbar: {
+            left: 'prev,next,today',
+            center:'title',
+            right:'dayGridMonth,timeGridWeek,timeGridDay'
+          },
+
+        //   建立活動事件,須連到資料庫才能完整
+        events:[
+            {
+            title:'手工提拉米蘇',
+            start:'2022-12-26T14:00:00',
+            end:'2022-12-27T16:00:00'
+            },
+            {
+            title:'手工餅乾',
+            start:'2022-12-28',          
+            allDay:false
+            }
+
+        ]
+
+        });
+        calendar.render();
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+    <div id='calendar'></div>
+    </div>
+  </body>
+</html>
