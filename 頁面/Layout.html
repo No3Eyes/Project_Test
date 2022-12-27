@@ -114,47 +114,51 @@
     <!-- Page Header End -->
 
     <!-- 內容 Start -->
+    <div class="container-xxl py-6">
 
-<<<<<<< Updated upstream
+        <link rel="stylesheet" href="style.css" !important;>
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var calendarEl = document.getElementById('calendar');
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
 
+                    locale: 'zh-tw',
+                    navLinks: true,
+                    headerToolbar: {
+                        left: 'prev,next,today',
+                        center: 'title',
+                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                    },
 
-=======
-    document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth',
-         
-          locale:'zh-tw',
-          height: 600,
-          navLinks: true,
-          headerToolbar: {
-            left: 'prev,next,today',
-            center:'title',
-            right:'dayGridMonth,timeGridWeek,timeGridDay'
-          },
+                    // 建立活動事件,須連到資料庫才能完整
+                    events: [
+                        {
+                            title: '手工提拉米蘇',
+                            start: '2022-12-26T14:00:00',
+                            end: '2022-12-27T16:00:00'
+                        },
+                        {
+                            title: '手工餅乾',
+                            start: '2022-12-28',
+                            allDay: false
+                        }
 
-        //   建立活動事件,須連到資料庫才能完整
-        events:[
-            {
-            title:'手工提拉米蘇',
-            start:'2022-12-26T14:00:00',
-            end:'2022-12-27T16:00:00'
-            },
-            {
-            title:'手工餅乾',
-            start:'2022-12-28',          
-            allDay:false
-            }
+                    ]
 
-        ]
+                });
+                calendar.render();
+            });
 
-        });
-        calendar.render();
-      });
+        </script>
 
-    </script>
->>>>>>> Stashed changes
+        <script src='index.global.js' !important;></script>
+
+        <div class="container-xxl py-6">
+            <div id='calendar'></div>
+        </div>
+    </div>
 
     <!-- 內容 End -->
 
