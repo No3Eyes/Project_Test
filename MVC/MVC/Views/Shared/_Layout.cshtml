@@ -89,10 +89,12 @@
                             <a asp-controller="Home" asp-action="News" class="dropdown-item">甜嘴MoBlog內頁</a>
                             <a asp-controller="Home" asp-action="Cart" class="dropdown-item">購物車頁面</a>
                             <a asp-controller="Home" asp-action="orderCustomizedCake" class="dropdown-item">客訂蛋糕頁面</a>
-                            <a asp-controller="Home" asp-action="Class" class="dropdown-item">甜點課程</a>
+                            <a asp-controller="Home" asp-action="Class" class="dropdown-item">甜點課程</a>                       
                         </div>
                     </div>
-                    <a asp-controller="Home" asp-action="contact" class="nav-item nav-link">聯絡我們</a>
+                    <a asp-controller="Home" asp-action="contact" class="nav-item nav-link">聯絡我們</a>                  
+                    @*<partial name="_LoginPartial" />*@ @*預設登入*@
+
                 </div>
                 <!-- icons -->
                 <div class="d-none d-lg-flex ms-2">
@@ -213,6 +215,7 @@
         </div>
     </div>
     <!-- 註冊_Modal End -->
+
     @RenderBody()
 
     <!-- Footer Start -->
@@ -304,5 +307,7 @@
 
     <!-- Template Javascript -->
     <script src="~/js/main.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
